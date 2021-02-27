@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Сайт-визитка Ярослав Романюк" />
+    <meta name="keywords" content="Романюк Ярослав, портфолио, сайт-визитка, Yaroslav Romanyuk" />
+    <meta name="viewport" content="width=device-width" >
+    
+    <title>Сайт-визитка</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+  </head>
+ 
+  <body>
+      
+  <style>
+         .MenuWrap {
+				background-color: #2F4F4F;
+				font-family: 'Oswald', sans-serif;
+				font-size: 1.5rem;
+				min-height: 2.75rem;
+				display: flex;
+				align-items: center;
+				padding: 0.5rem;
+			  }
+			  .ListItem:hover{
+				-webkit-transform: scale(1.5);
+				transform: skew(-7deg, 0) scale(1.2);
+			  }	
+			  .LastItem:hover{
+				transform: skew(-10deg, 0) scale(1.2);
+			  }	
+			  .ListItem,
+			  .LastItem {
+				color: rgb(255,100,50); /*IE8 */
+				color: rgba(0, 255, 0, .5);
+				text-decoration: none;
+        text-shadow: -1px 1px 1px #98FB98, 1px -1px 1px #333;
+			  }
+			  .ListItem {
+				margin-left: 1rem;
+				margin-right: 1rem;
+			  }
+			  .LastItem {
+				margin-left: auto;
+				margin-right: 1.5rem;
+			  }
+        body {
+          background-color: rgba(144, 238, 144, .3);
+
+        }
+			  abody {background-image:
+				linear-gradient(to bottom, rgba(153,0,0, .2), #FC0,
+				rgba(153,0,0, .2));
+			  }
+			  .foto1 {
+          margin-top: 6.5em;
+          margin-left: 7em;
+          vertical-align: top;
+          border-radius: 29%;
+        }
+        .Aboutme { 
+         /* background: #caf6da url(XmYCoiK0dVQ.jpg) no-repeat;*/
+			    background-position: top left;  
+          font-family: 'Dayton', sans-serif;
+          text-align: left;
+          padding-left: 11em;
+          padding-top: 4em;
+          max-width: 45%;
+				  font-weight: bold; 
+				  color: navy; 
+				  font-size: 3rem;
+				  text-shadow: -4px 2px 2px #FFFAFA, 1px -1px 2px #000;
+			    }
+        #footer {
+		  	  color: maroon;  
+          font-weight: normal; 
+          font-style: italic; 
+          font-size: 13px;
+		    }
+	</style>
+       <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script>
+		  [endif]-->
+    <header>
+      <div class="MenuWrap">
+        <a href="#" class="ListItem">Обо мне</a>
+        <a href="#" class="ListItem">Резюме</a>
+        <a href="#" class="ListItem">Портфолио</a>
+        <a href="#" class="ListItem">Сертификаты</a>
+        <a href="#" class="LastItem">Контакты</a>
+      </div>
+    </header>
+    <main>
+      <div style="float: left;">
+        <img class="foto1" src="XmYCoiK0dVQ.jpg" width="250em">
+        </div>
+        <div style="float: rightleft;">
+      <div class="Aboutme">
+        <a>Привет! <br>Меня зовут Ярослав и я начинающий тестировщик <br>(aka QA Engineer).
+        </a> 
+      </div>
+      </div>
+    </main>
+    <footer>
+     <!-- <p id="footer">Пожалуйста, не крадите эту страницу, хоть она и не защищена авторским правом.
+       </p> --> 
+      </footer>
+  </body>
+</html>
