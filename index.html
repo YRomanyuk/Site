@@ -92,30 +92,48 @@
           font-style: italic; 
           font-size: 1em;
 		    }
-        p {
+        h2 {
           text-align: right;
           padding-right: 5em;
-          padding-bottom: 3em;
+          padding-bottom: 4em;
           font-size: 2.5em;
           font-family: Calibri, 'Trebuchet MS', serif;
           font-style: oblique;
-          color: rgba(0, 100, 0, 1);
+          color: rgba(0, 0, 139, .7);
           line-height: 150%;
           text-shadow: -2px 2px 2px #5F9EA0, 1px -1px 2px #000;
+        }
+        h3 {
+           font-size: 3em;
+           font-family: 'century-gotic', serif;
+           text-align: center;
+           font-style: normal;
+           color: darkblue;
+        }
+        .Res {
+            font-size: 2em;
+            font-family: Consolas;
+            padding-left: 5em;
+        }
+        p {
+          font-size: 2.5em;
+          font-family: Calibri, 'Trebuchet MS', serif;
+
         }
 	</style>
       <!-- <if lt IE9> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script>
 		  <end if> -->
     <header>
       <div class="MenuWrap">
-        <a href="#" class="ListItem">Обо мне</a>
-        <a href="#" class="ListItem">Резюме</a>
+        <a href="index.html#top" class="ListItem">Обо мне</a>
+        <a href="index.html#resume" class="ListItem">Резюме</a>
         <a href="#" class="ListItem">Портфолио</a>
         <a href="#" class="ListItem">Сертификаты</a>
         <a href="#" class="LastItem">Контакты</a>
       </div>
     </header>
     <main>
+        <a id="top"></a>
       <div class="main-top">
         <div style="float: left;">
           <img class="foto1" src="https://yromanyuk.github.io/Site/XmYCoiK0dVQ.jpg" width="250em">
@@ -128,21 +146,87 @@
          </div>
       </div>
       <div class="main-center">;
-        <p>Считаю, что инженер - это симбиоз точных наук<br>с творческим подходом и  вот тому подтверждение:</p>
+        <h2>Считаю, что инженер - это симбиоз точных наук<br>с творческим подходом и  вот тому подтверждение:</h2>
       <div class="video_from_youtube">;
         <iframe width="560" height="315" src="https://www.youtube.com/embed/fSFmTLeS0J4" frameborder="0" allow="accelerometer; autoplay; 
         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>    
-      <p>Док-станция для накопителей DEXP AT-HA007 пригодится некоторым пользователям. Она применяется для подключения жестких дисков 
-        к компьютеру через разъем USB. Вы сможете полноценно работать с накопителями, обмениваться информацией с ними.
-        Док-станция DEXP AT-HA007 получила три слота для носителей. Представленная модель поддерживает накопители с интерфейсами SATA II, SATA III и 
-        IDE. Благодаря этому обеспечивается совместимость с различными жесткими дисками.
-        Форм-фактор поддерживаемых накопителей – 2.5 и 3.5 дюйма. Их подключение к адаптеру происходит быстро, данная операция занимает минимум 
-        времени у владельца. Питание док-станция получает от сети 220 В. В коробке предоставляется сетевой адаптер, он подключается к розетке и 
-        изменяет параметры электрического тока.
-        Док-станция поддерживает интерфейс USB 3.0. Он гарантирует передачу данных на большой скорости, обладает высокой пропускной способностью. 
-        Преимуществом представленного адаптера станет отсутствие необходимости устанавливать дополнительные драйвера. Достаточно поставить HDD 
-        в док-станцию и подключить ее к разъему USB.</p></div>
+      </div> 
+     
+      <a id="resume"></a> 
+
+     <!-- <div class="btn" id="Download" data-path="http://#">Download</div>
+
+      <script> downloadFile(url){
+        var link = document.createElement('a');
+      link.href = url;
+      link.target="_blank";
+      link.download='';
+      
+      var event = document.createEvent("MouseEvents");
+      event.initMouseEvent("click");
+      link.dispatchEvent(event);
+    }
+    
+    var but = document.getElementById('dbut')
+    but.addEventListener('click', function(){
+        downloadFile(but.getAttribute('data-path'));
+    })
+    </script>
+    -->
+      <a><br></a>  
+    <h3>Резюме</h3>
+        <div class="Res">
+        <dl>
+            <dt>Октябрь 2020 — декабрь 2020</dt>
+            <dd><strong>ООО "Инжгео"</strong></dd>
+            <dd>Инженер-геофизик (разовый проект)</dd>
+            <dt>Апрель 2020 — май 2020</dt>
+            <dd><strong>ИП Лабковский</strong></dd>
+            <dd>Инженер-геофизик (разовый проект)</dd>
+            <dt>Декабрь 2019 — апрель 2020</dt>
+            <dd><strong>Atlas professionals</strong></dd>
+            <dd>Супервайзер-геофизик (разовый проект)</dd>
+            <dt>Май 2016 — июль 2019</dt>
+            <dd><strong>ООО "Открытие"</strong></dd>
+            <dd>Инженер-геофизик</dd>
+            <dt>Январь 2016 — май 2016</dt>
+            <dd><strong>ООО "НовосибирскНИПИнефть"</strong></dd>
+            <dd>Инженер по бурению (геомеханика)</dd>
+            <dt>Сентябрь 2013 — январь 2016</dt>
+            <dd><strong>ООО "Геологическая сервисная компания"</strong></dd>
+            <dd>Геофизик-супервайзер</dd>
+            <dt>Январь 2008 — август 2013</dt>
+            <dd><strong>ООО НПФ "Золотая Долина"</strong></dd>
+            <dd>Заместитель Директора по развитию</dd>
+            <dt>Май 2007 — ноябрь 2007</dt>
+            <dd><strong>Schlumberger</strong></dd>
+            <dd>Инженер по наклонно-направленному бурению</dd>
+            <dt>Январь 2006 — май 2007</dt>
+            <dd><strong>Salym Petroleum Development (Shell)</strong></dd>
+            <dd>Младший инженер (отдел бурения)</dd>
+            <dt>Ноябрь 2005 — декабрь 2005</dt>
+            <dd><strong>ООО "Алекта"</strong></dd>
+            <dd>Специалист по внедрению и сопровождению ПО (разовый проект)</dd>
+            <dt>Май 2005 — август 2005</dt>
+            <dd><strong>ЗАО СКБ "Ореол"</strong></dd>
+            <dd>Оператор станции ГТИ</dd>
+            <dt>Май 2004 — май 2005</dt>
+            <dd><strong>Geoservices</strong></dd>
+            <dd>Оператор станции ГТИ</dd>
+            <dt>Февраль 2004 — март 2004</dt>
+            <dd><strong>ООО "Алекта"</strong></dd>
+            <dd>Специалист по внедрению и сопровождению ПО (разовый проект)</dd>
+            <dt>Октябрь 2003 — ноябрь 2003</dt>
+            <dd><strong>ООО "Алекта"</strong></dd>
+            <dd>Специалист по внедрению и сопровождению ПО (разовый проект)</dd>
+            <dt>Октябрь 2001 — декабрь 2002</dt>
+            <dd><strong>ОАО "Сибнефтегеофизика"</strong></dd>
+            <dd>Инженер-геофизик</dd>
+        </dl>
+        </div>
+
+      </div>
+        <a href="index.html#top"></a>
     </main>
     <footer>
      <p id="footer">Пожалуйста, не крадите эту страницу, хоть она и не защищена авторским правом.
