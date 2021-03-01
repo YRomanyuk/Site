@@ -2,8 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Сайт-визитка Ярослав Романюк" />
-    <meta name="keywords" content="Романюк Ярослав, портфолио, сайт-визитка, Yaroslav Romanyuk" />
+    <meta name="description" content="Сайт-визитка Ярослав" />
+    <meta name="keywords" content="Ярослав, портфолио, сайт-визитка, Yaroslav+R" />
     <meta name="viewport" content="width=device-width" >
     
     <title>Сайт-визитка</title>
@@ -71,7 +71,7 @@
 				  text-shadow: -4px 2px 2px #FFFAFA, 1px -1px 2px #000;
         }
         .main-top {
-			    background-image: linear-gradient(to bottom, rgba(0, 255, 0, .5),rgba(0, 250, 154, .4), rgba(144, 238, 144, .2));
+			    background-image: linear-gradient(to top, rgba(0, 255, 0, .5),rgba(0, 250, 154, .4), rgba(144, 238, 144, .2));
           padding-bottom: 7em;        
 			  }
         .video_from_youtube {
@@ -84,7 +84,7 @@
           top: 0; left: 0; bottom: 0; right: 0;
         }
         .main-center {
-          background-image: linear-gradient(to top, rgba(0, 255, 0, .5),rgba(0, 250, 154, .4), rgba(144, 238, 144, .2));
+          background-image: linear-gradient(to bottom, rgba(0, 255, 0, .5),rgba(0, 250, 154, .4), rgba(144, 238, 144, .2));
           }
         #footer {
 		  	  color: maroon;  
@@ -114,12 +114,123 @@
             font-size: 2em;
             font-family: Consolas;
             padding-left: 5em;
+            padding-bottom: 5em;
         }
         p {
           font-size: 2.5em;
           font-family: Calibri, 'Trebuchet MS', serif;
 
         }
+        .Cont {
+            background-image: linear-gradient(to top, rgba(0, 255, 0, .5),rgba(0, 250, 154, .4), rgba(144, 238, 144, .2));
+        }
+        .cover {
+    background: rgba(152, 251, 152, .5); 
+    width:700px; 
+    margin:auto; 
+    padding-left:60px;
+}
+ 
+h2.contact { 
+    padding-left: 125px; 
+    font-size: 66px; 
+    color: #ff5400; 
+    height: 105px; 
+    background: url(images/contact.png) no-repeat -10px -10px;  
+    font-family: sans-serif;
+}
+ 
+p.contact { 
+    font-size: 24px; 
+    margin-bottom: 15px; 
+    line-height: 36px; 
+    font-family: sans-serif, Arial; 
+    color: #4b4b4b; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); 
+}
+ 
+#contact {
+    margin-bottom: 0px; 
+}
+ 
+input[type="text"] {
+    width: 400px; 
+}
+ 
+textarea { 
+    width: 600px; 
+    height: 275px; 
+}
+ 
+label { 
+    color: #ff5400; 
+}
+ 
+input, textarea { 
+    background-color: rgba(255, 255, 255, 0.4); 
+    border: 5px solid rgba(122, 192, 0, 0.15); 
+    padding: 10px; 
+    font-family: Keffeesatz, Arial; 
+    color: #4b4b4b; 
+    font-size: 24px; 
+    -webkit-border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+ 
+input:focus, textarea:focus { 
+    border: 5px solid #ff5400; 
+    background-color: rgba(255, 255, 255, 1);
+}
+ 
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    background-color: #7ac000;
+    padding: 5px 36px 8px 36px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.23, #619702),
+        color-stop(0.62, #7ac000)
+    );
+    background: -moz-linear-gradient(
+        center bottom,
+        #619702 23%,
+        #7ac000 62%
+    );
+}
+ 
+input[type="submit"]:hover {
+    color: #fff; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4); 
+    background-color: #ff5400;
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.23, #c34000),
+        color-stop(0.62, #ff5400)
+    );
+    background: -moz-linear-gradient(
+        center bottom,
+        #c34000 23%,
+        #ff5400 62%
+    );
+}
+ 
+input[type="submit"]:active { 
+    top: 1px; 
+}
 	</style>
       <!-- <if lt IE9> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script>
 		  <end if> -->
@@ -127,9 +238,9 @@
       <div class="MenuWrap">
         <a href="index.html#top" class="ListItem">Обо мне</a>
         <a href="index.html#resume" class="ListItem">Резюме</a>
-        <a href="#" class="ListItem">Портфолио</a>
+        <a href="Portfolio.html" class="ListItem">Портфолио</a>
         <a href="Certificates.html" class="ListItem">Сертификаты</a>
-        <a href="#" class="LastItem">Контакты</a>
+        <a href="index.html#contacts" class="LastItem">Контакты</a>
       </div>
     </header>
     <main>
@@ -147,12 +258,12 @@
       </div>
       <div class="main-center">;
         <h2>Считаю, что инженер - это симбиоз точных наук<br>с творческим подходом и  вот тому подтверждение:</h2>
-      <div class="video_from_youtube">;
+        <div class="video_from_youtube">;
         <iframe width="560" height="315" src="https://www.youtube.com/embed/fSFmTLeS0J4" frameborder="0" allow="accelerometer; autoplay; 
         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div> 
+        </div> 
      
-      <a id="resume"></a> 
+        <a id="resume"></a> 
 
      <!-- <div class="btn" id="Download" data-path="http://#">Download</div>
 
@@ -227,7 +338,31 @@
         </div>
 
       </div>
-        <a href="index.html#top"></a>
+      <div class="Cont">
+      <a><br></a>
+      <a id="contacts"></a> 
+      <a><br></a>
+      
+        <h3>Контакты</h3>
+            <div class="cover">
+                <h1 class="contact">Напишите мне</h1>
+                    <form id="contactform"> 
+                        <p class="contact"><label for="name">Имя</label></p> 
+            <input id="name" name="name" placeholder="Ваше имя" required="" tabindex="1" type="text"> 
+     
+                        <p class="contact"><label for="email">Email</label></p> 
+            <input id="email" name="email" placeholder="example@sitehere.ru" required="" tabindex="2" type="text"> 
+     
+                        <p class="contact"><label for="Subject">Тема</label></p> 
+            <input id="subject" name="subject" placeholder="Тема сообщения" required="" tabindex="2" type="text"> 
+     
+                        <p class="contact"><label for="comment">Сообщение</label></p> 
+                    <textarea name="comment" id="comment" tabindex="4"></textarea> <br>
+            <input name="submit" id="submit" tabindex="5" value="Отправить" type="submit"> 	 
+        </form> 
+    </div> 
+
+          </div>    
     </main>
     <footer>
      <p id="footer">Пожалуйста, не крадите эту страницу, хоть она и не защищена авторским правом.
