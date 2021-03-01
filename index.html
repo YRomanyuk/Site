@@ -69,11 +69,23 @@
 				  color: navy; 
 				  font-size: 3rem;
 				  text-shadow: -4px 2px 2px #FFFAFA, 1px -1px 2px #000;
-          }
-         .main-top {
+        }
+        .main-top {
 			    background-image: linear-gradient(to bottom, rgba(0, 255, 0, .5),rgba(0, 250, 154, .4), rgba(144, 238, 144, .2));
-          padding-bottom: 10em;        
-			    }
+          padding-bottom: 7em;        
+			  }
+        .video_from_youtube {
+          
+          width: 50%;
+          height: 50%;
+          overflow: auto;
+          margin: auto;
+          position: auto;
+          top: 0; left: 0; bottom: 0; right: 0;
+        }
+        .main-center {
+          background-image: linear-gradient(to top, rgba(0, 255, 0, .5),rgba(0, 250, 154, .4), rgba(144, 238, 144, .2));
+          }
         #footer {
 		  	  color: maroon;  
           font-weight: normal; 
@@ -81,7 +93,15 @@
           font-size: 1em;
 		    }
         p {
-          font-size: 3em;
+          text-align: right;
+          padding-right: 5em;
+          padding-bottom: 3em;
+          font-size: 2.5em;
+          font-family: Calibri, 'Trebuchet MS', serif;
+          font-style: oblique;
+          color: rgba(0, 100, 0, 1);
+          line-height: 150%;
+          text-shadow: -2px 2px 2px #5F9EA0, 1px -1px 2px #000;
         }
 	</style>
       <!-- <if lt IE9> <script src="//html5shiv.googlecode.com/ svn/trunk/html5.js"></script>
@@ -97,16 +117,22 @@
     </header>
     <main>
       <div class="main-top">
-      <div style="float: left;">
-        <img class="foto1" src="https://yromanyuk.github.io/Site/XmYCoiK0dVQ.jpg" width="250em">
+        <div style="float: left;">
+          <img class="foto1" src="https://yromanyuk.github.io/Site/XmYCoiK0dVQ.jpg" width="250em">
         </div>
         <div style="float: rightleft;">
-      <div class="Aboutme">
-        <a>Привет! <br>Меня зовут Ярослав и я начинающий тестировщик <br>(aka QA Engineer).
-        </a> 
+          <div class="Aboutme">
+            <a>Привет! <br>Меня зовут Ярослав и я начинающий тестировщик <br>(aka QA Engineer).
+            </a> 
+          </div>
+         </div>
       </div>
-      </div>
-      </div>
+      <div class="main-center">;
+        <p>Считаю, что инженер - это симбиоз точных наук<br>с творческим подходом и  вот тому подтверждение:</p>
+      <div class="video_from_youtube">;
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fSFmTLeS0J4" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>    
       <p>Док-станция для накопителей DEXP AT-HA007 пригодится некоторым пользователям. Она применяется для подключения жестких дисков 
         к компьютеру через разъем USB. Вы сможете полноценно работать с накопителями, обмениваться информацией с ними.
         Док-станция DEXP AT-HA007 получила три слота для носителей. Представленная модель поддерживает накопители с интерфейсами SATA II, SATA III и 
@@ -116,7 +142,7 @@
         изменяет параметры электрического тока.
         Док-станция поддерживает интерфейс USB 3.0. Он гарантирует передачу данных на большой скорости, обладает высокой пропускной способностью. 
         Преимуществом представленного адаптера станет отсутствие необходимости устанавливать дополнительные драйвера. Достаточно поставить HDD 
-        в док-станцию и подключить ее к разъему USB.</p>
+        в док-станцию и подключить ее к разъему USB.</p></div>
     </main>
     <footer>
      <p id="footer">Пожалуйста, не крадите эту страницу, хоть она и не защищена авторским правом.
