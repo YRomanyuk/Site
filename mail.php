@@ -1,6 +1,6 @@
 <?php 
 
-require_once('https://yromanyuk.github.io/Site/phpmailer/PHPMailerAutoload.php');
+require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
