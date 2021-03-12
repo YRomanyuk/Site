@@ -8,7 +8,7 @@ $name = $_POST['first_name'];
 $email = $_POST['email'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
-
+try{
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
