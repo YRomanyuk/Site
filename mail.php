@@ -31,9 +31,14 @@ $mail->Subject = 'Заявка с тестового сайта';
 $mail->Body    = '' .$name . ' оставил заявку,<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
 
-if(!$mail->send()) {
-    echo 'Error';
-} else {
-    header('location: thank-you.html');
+if ($mail->send()) {$result = "success";} 
+else {$result = "error";}
+
+} catch (Exception $e) {
+    $result = "error";
+    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
+
+// Отображение результата
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 ?>
