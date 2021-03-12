@@ -344,24 +344,23 @@ input[type="submit"]:active {
       <a><br></a>
       <a id="contacts"></a> 
       <a><br></a>
-      
         <h3>Контакты</h3>
             <div class="cover">
                 <h1 class="contact">Напишите мне</h1>
-                    <form id="contactform"> 
-                        <p class="contact"><label for="name">Имя</label></p> 
-            <input id="name" name="name" placeholder="Ваше имя" required="" tabindex="1" type="text"> 
+                    <form id="contactform" action="send.php" method="post"> 
+                        <p class="contact"><label for="first_name">Имя</label></p> 
+            <input id="name" name="first_name" placeholder="Ваше имя" required="" tabindex="1" type="text"> 
      
                         <p class="contact"><label for="email">Email</label></p> 
             <input id="email" name="email" placeholder="example@sitehere.ru" required="" tabindex="2" type="text"> 
      
-                        <p class="contact"><label for="Subject">Тема</label></p> 
+                        <p class="contact"><label for="subject">Тема</label></p> 
             <input id="subject" name="subject" placeholder="Тема сообщения" required="" tabindex="2" type="text"> 
      
                         <p class="contact"><label for="comment">Сообщение</label></p> 
                     <textarea name="comment" id="comment" tabindex="4"></textarea> <br>
             <input name="submit" id="submit" tabindex="5" value="Отправить" type="submit"> 	 
-        </form> 
+        </form>
     </div> 
 
           </div>    
