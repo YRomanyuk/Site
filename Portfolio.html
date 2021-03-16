@@ -28,15 +28,15 @@
 				color: rgb(255,100,50); /*IE8 */
 				color: rgba(0, 255, 0, .5);
 				text-decoration: none;
-        text-shadow: -1px 1px 1px #98FB98, 1px -1px 1px #333;
+        text-shadow: -1px 1px 2px #0eee06, 1px -1px 1px #333;
 			  }
 			  .row {
           font-size: 2em;
         }
-              
+        
     </style>
      <!-- Navbar Component -->
- <nav class="navbar-light bg-light navbar navbar-expand-sm ">
+ <nav class="navbar-dark sticky-top navbar navbar-expand-lg " style="background-color: #2F4F4F;">
   
  
 
@@ -47,6 +47,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index.html#resume">Резюме</a>
+      </li>
+      <li class="nav-item-active">
+        <a class="nav-link" href="#">Портфолио</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="Certificates.html">Сертификаты</a>
@@ -67,7 +70,7 @@
       <a aria-expanded="false" aria-controls="seedSpecial" data-toggle="collapse" href="#seedSpecial">
         <span class="badge badge-pill badge-light">Нажмите, чтобы развернуть</span>
       </a>
-      <pre class="collapse" id="seedSpecial"><code>
+      <pre class="collapse" id="seedSpecial"><small>
         import org.openqa.selenium.By;
         import org.openqa.selenium.WebDriver;
         import org.openqa.selenium.WebElement;
@@ -166,7 +169,7 @@
             }
         
         
-                }</code>
+                }</small>
       </pre>
     </div>
   </div>
