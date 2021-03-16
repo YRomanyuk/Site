@@ -1,81 +1,190 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Сайт-визитка Ярослав Романюк" />
-    <meta name="keywords" content="Романюк Ярослав, портфолио, сайт-визитка, Yaroslav Romanyuk" />
-    <meta name="viewport" content="width=device-width" >
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-	  
-    <title>Сайт-визитка</title>
-    
-    <link rel="stylesheet" href="style.css"> 
-    
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-  </head>
  
-  <body>
-      
-  <style>
-       .MenuWrap {
-           position:fixed;
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+        <title>Website</title>
+    </head>
+<body>
+
+    <style>
+   
+   .navbar {
+          
            top: 1;
            width: 98%;
-				background-color: #2F4F4F;
+				
 				font-family: 'Oswald', sans-serif;
 				font-size: 1.5rem;
 				min-height: 2.75rem;
-				display: flex;
-				align-items: center;
+				
+				
 				padding: 0.5rem;
-			  }
-			  .ListItem:hover{
-				-webkit-transform: scale(1.5);
-				transform: skew(-7deg, 0) scale(1.2);
-			  }	
-			  .LastItem:hover{
-				transform: skew(-10deg, 0) scale(1.2);
-			  }	
-			  .ListItem,
-			  .LastItem {
+			  
 				color: rgb(255,100,50); /*IE8 */
 				color: rgba(0, 255, 0, .5);
 				text-decoration: none;
         text-shadow: -1px 1px 1px #98FB98, 1px -1px 1px #333;
 			  }
-			  .ListItem {
-				margin-left: 1rem;
-				margin-right: 1rem;
-			  }
-			  .LastItem {
-				margin-left: auto;
-				margin-right: 1.5rem;
-			  }
-              p {
-                font-size: 90px;
+			  .row {
+          font-size: 2em;
+        }
+              
+    </style>
+     <!-- Navbar Component -->
+ <nav class="navbar-light bg-light navbar navbar-expand-sm ">
+  
+ 
 
-              }
-      
-      .foto1 {
-          margin-top: 6.5em;
-          margin-bottom: 6.5em;
-          margin-left: 7em;
-          vertical-align: top;
-      }
-   </style>
-   <header>
-    <div class="MenuWrap">
-      <a href="index.html#top" class="ListItem">Обо мне</a>
-      <a href="index.html#resume" class="ListItem">Резюме</a>
-      <a href="Portfolio.html" class="ListItem">Портфолио</a>
-      <a href="Certificates.html" class="ListItem">Сертификаты</a>
-      <a href="index.html#contacts" class="LastItem">Контакты</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#top">Обо мне<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#resume">Резюме</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Certificates.html">Сертификаты</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#contacts">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- End of navbar component -->
+
+<div class="container">
+  <!-- Row with collapsible content -->
+  <div class="row">
+    <div class="col text-center">
+      <a aria-expanded="false" aria-controls="seedSpecial" data-toggle="collapse" href="#seedSpecial">
+        Автотест для IDEA: заполнение формы оплаты банковской картой и снятие скриншота (нажмите, чтобы развернуть):
+      </a>
+      <pre class="collapse" id="seedSpecial"><code>
+        import org.openqa.selenium.By;
+        import org.openqa.selenium.WebDriver;
+        import org.openqa.selenium.WebElement;
+        import org.openqa.selenium.chrome.ChromeDriver;
+        import org.openqa.selenium.interactions.Actions;
+        import org.openqa.selenium.support.ui.Select;
+        import org.testng.annotations.AfterClass;
+        import org.testng.annotations.BeforeClass;
+        import org.testng.annotations.Test;
+        import ru.yandex.qatools.ashot.Screenshot;
+        import ru.yandex.qatools.ashot.AShot;
+        
+        import javax.imageio.ImageIO;
+        import java.io.File;
+        import java.util.concurrent.TimeUnit;
+        
+        import static org.testng.Assert.assertEquals;
+        
+        public class FirstAttempt {
+            private WebDriver driver;
+            private String baseUrl;
+        
+        
+            @BeforeClass(alwaysRun = true)
+            public void setUp() throws Exception {
+                System.setProperty("webdriver.chrome.driver", "src\\test\\java\\chromedriver.exe");
+                driver = new ChromeDriver();
+                baseUrl = "https://sandbox.cardpay.com/MI/cardpayment2.html?orderXml=PE9SREVSIFdBTExFVF9JRD0nODI5OScgT1JERVJfTlVNQkVSPSc0NTgyMTEnIEFNT1VOVD0nMjkxLjg2JyBDVVJSRU5DWT0nRVVSJyAgRU1BSUw9J2N1c3RvbWVyQGV4YW1wbGUuY29tJz4KPEFERFJFU1MgQ09VTlRSWT0nVVNBJyBTVEFURT0nTlknIFpJUD0nMTAwMDEnIENJVFk9J05ZJyBTVFJFRVQ9JzY3NyBTVFJFRVQnIFBIT05FPSc4NzY5OTA5MCcgVFlQRT0nQklMTElORycvPgo8L09SREVSPg==&sha512=998150a2b27484b776a1628bfe7505a9cb430f276dfa35b14315c1c8f03381a90490f6608f0dcff789273e05926cd782e1bb941418a9673f43c47595aa7b8b0d";
+                driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            }
+        
+            @Test
+            public void testConfirmedTestCase() throws Exception {
+                Actions action = new Actions(driver);
+                driver.get(baseUrl);
+                driver.findElement(By.id("input-card-number")).sendKeys("4000000000000002");
+                driver.findElement(By.id("input-card-holder")).sendKeys("MIKE KIN");
+                new Select(driver.findElement(By.id("card-expires-month"))).selectByVisibleText("07");
+                new Select(driver.findElement(By.id("card-expires-year"))).selectByVisibleText("2037");
+                driver.findElement(By.id("input-card-cvc")).sendKeys("777");
+                WebElement cvcHint = driver.findElement(By.xpath("//*[@id=\"cvc-hint-toggle\"]"));
+                action.moveToElement(cvcHint).build().perform();
+                Screenshot screenshot = new AShot().takeScreenshot(driver);
+                ImageIO.write(screenshot.getImage(), "png", new File("Screenshots\\Screenshot.png"));
+                driver.findElement(By.id("action-submit")).click();
+                driver.findElement(By.id("success")).submit();
+                assertEquals(driver.findElement(By.xpath("//div[@id='payment-item-status']/div[2]")).getText(), "Confirmed");
+                assertEquals(driver.findElement(By.xpath("//div[@id='payment-item-cardholder']/div[2]")).getText(), "MIKE KIN");
+                assertEquals(driver.findElement(By.id("payment-item-total-amount")).getText(), "291.86");
+        
+            }
+            @Test
+            public void testDeclinedTestCase() throws Exception {
+                driver.get(baseUrl);
+                driver.findElement(By.id("input-card-number")).sendKeys("5555555555554444");
+                driver.findElement(By.id("input-card-holder")).sendKeys("MIKE KIN");
+                new Select(driver.findElement(By.id("card-expires-month"))).selectByVisibleText("07");
+                new Select(driver.findElement(By.id("card-expires-year"))).selectByVisibleText("2037");
+                driver.findElement(By.id("input-card-cvc")).sendKeys("007");
+                driver.findElement(By.id("action-submit")).click();
+                driver.findElement(By.id("failure")).submit();
+                assertEquals(driver.findElement(By.xpath("//div[@id='payment-item-status']/div[2]")).getText(), "Declined by issuing bank");
+                assertEquals(driver.findElement(By.xpath("//div[@id='payment-item-cardholder']/div[2]")).getText(), "MIKE KIN");
+                assertEquals(driver.findElement(By.id("payment-item-total-amount")).getText(), "291.86");
+            }
+            @Test
+            public void testAuthorizedTestCase() throws Exception {
+                driver.get(baseUrl);
+                driver.findElement(By.id("input-card-number")).sendKeys("4000000000000077");
+                driver.findElement(By.id("input-card-holder")).sendKeys("MIKE KIN");
+                new Select(driver.findElement(By.id("card-expires-month"))).selectByVisibleText("07");
+                new Select(driver.findElement(By.id("card-expires-year"))).selectByVisibleText("2037");
+                driver.findElement(By.id("input-card-cvc")).sendKeys("007");
+                driver.findElement(By.id("action-submit")).click();
+        
+                assertEquals(driver.findElement(By.xpath("//div[@id='payment-item-status']/div[2]")).getText(), "Confirmed");
+                assertEquals(driver.findElement(By.xpath("//div[@id='payment-item-cardholder']/div[2]")).getText(), "MIKE KIN");
+                assertEquals(driver.findElement(By.id("payment-item-total-amount")).getText(), "291.86");
+            }
+            @Test
+            public void testCardSnotValidTestCase() throws Exception {
+                driver.get(baseUrl);
+                driver.findElement(By.id("input-card-number")).sendKeys("0000000000000036");
+                driver.findElement(By.id("input-card-holder")).sendKeys("МАЙК КИН");
+                new Select(driver.findElement(By.id("card-expires-month"))).selectByVisibleText("07");
+                new Select(driver.findElement(By.id("card-expires-year"))).selectByVisibleText("2037");
+                driver.findElement(By.id("input-card-cvc")).sendKeys("007");
+                driver.findElement(By.id("action-submit")).click();
+        
+                assertEquals(driver.findElement(By.xpath("//div[@id='card-holder-field']/div/label")).getText(), "Cardholder name is not valid");
+                assertEquals(driver.findElement(By.xpath("//div[@id='card-number-field']/div/label")).getText(), "Card number is not valid");
+            }
+            @AfterClass(alwaysRun = true)
+            public void tearDown() throws Exception {
+        
+            }
+        
+        
+                }</code>
+      </pre>
     </div>
-  </header>
-  <main>
-      <br><br><br>
-  <p>Under construction</p>
-   </main>
+  </div>
+<!-- End of row  -->
+
+   
+   
+
+
+
+
+
+</div> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script> 
   </body>
 
 </html>
